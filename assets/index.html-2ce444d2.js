@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as n,a as o}from"./app-55c326ac.js";const c={};function r(s,_){return t(),n("div",null,[o(" ![](https://oss.moniter.top/uPic/2023-11-27/index.jpg) ")])}const i=e(c,[["render",r],["__file","index.html.vue"]]);export{i as default};

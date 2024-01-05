@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-a8a405f0","path":"/flinux/Ansible/YAML-%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F.html","title":"yaml格式语法","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1701020615000,"contributors":[{"name":"Linkefou","email":"wlh724567296@163.com","commits":1}]},"filePathRelative":"flinux/Ansible/YAML-文件格式.md"}');export{e as data};

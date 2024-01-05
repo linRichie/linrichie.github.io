@@ -1,0 +1,1 @@
+const o=JSON.parse('{"key":"v-3428b5a6","path":"/fpython/","title":"fpython目录","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1704354077000,"contributors":[{"name":"wanglinhao","email":"wanglinhao@wegooooo.com","commits":3},{"name":"Linkefou","email":"wlh724567296@163.com","commits":1}]},"filePathRelative":"fpython/index.md"}');export{o as data};

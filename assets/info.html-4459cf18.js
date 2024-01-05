@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-d7b843f6","path":"/fpython/info.html","title":"Python学习指南","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1704354077000,"contributors":[{"name":"wanglinhao","email":"wanglinhao@wegooooo.com","commits":1}]},"filePathRelative":"fpython/info.md"}');export{t as data};

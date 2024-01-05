@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-74b94c6f","path":"/fpython/htmlsystem/","title":"Python 前端框架","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1701251442000,"contributors":[{"name":"wanglinhao","email":"wanglinhao@wegooooo.com","commits":1}]},"filePathRelative":"fpython/htmlsystem/index.md"}');export{t as data};

@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-4ebdccc8","path":"/flinux/Commands/alias.html","title":"命令别名:alias","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1701223649000,"contributors":[{"name":"wanglinhao","email":"wanglinhao@wegooooo.com","commits":1}]},"filePathRelative":"flinux/Commands/alias.md"}');export{a as data};

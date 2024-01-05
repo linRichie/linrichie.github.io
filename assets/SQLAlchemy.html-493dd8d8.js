@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-a1af8e60","path":"/fpython/SQLAlchemy/SQLAlchemy.html","title":"获取insert或者update的id","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1701234657000,"contributors":[{"name":"wanglinhao","email":"wanglinhao@wegooooo.com","commits":1}]},"filePathRelative":"fpython/SQLAlchemy/SQLAlchemy.md"}');export{e as data};

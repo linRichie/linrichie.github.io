@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.67">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/Photograph-16.png"><link rel="icon" type="image/png" sizes="32x32" href="/images/icons/Photograph-32.png"><title>Playbook介绍 | linRichie</title><meta name="description" content="linRichie blog programming path">
+    <link rel="preload" href="/assets/style-8a38cc2d.css" as="style"><link rel="stylesheet" href="/assets/style-8a38cc2d.css">
+    <link rel="modulepreload" href="/assets/app-55c326ac.js"><link rel="modulepreload" href="/assets/Playbook-1.html-dd51969b.js"><link rel="modulepreload" href="/assets/Playbook-1.html-d678ff3e.js"><link rel="prefetch" href="/assets/index.html-883b494d.js" as="script"><link rel="prefetch" href="/assets/info.html-2efa170a.js" as="script"><link rel="prefetch" href="/assets/index.html-0de89213.js" as="script"><link rel="prefetch" href="/assets/info.html-4459cf18.js" as="script"><link rel="prefetch" href="/assets/NodeJs-N.html-d2f490c2.js" as="script"><link rel="prefetch" href="/assets/index.html-5d76c83f.js" as="script"><link rel="prefetch" href="/assets/index.html-9fca7929.js" as="script"><link rel="prefetch" href="/assets/ChatGPT 学习技术.html-61c9169a.js" as="script"><link rel="prefetch" href="/assets/ChatGPT 提示工程框架.html-c0684c03.js" as="script"><link rel="prefetch" href="/assets/ChatGPT 颜色图片生成器.html-4fd8b4ac.js" as="script"><link rel="prefetch" href="/assets/Midjourney好用的关键词.html-5a713cc8.js" as="script"><link rel="prefetch" href="/assets/StableDiffusion-WebUI进阶插件推荐.html-aa26a122.js" as="script"><link rel="prefetch" href="/assets/index.html-727a671b.js" as="script"><link rel="prefetch" href="/assets/Python-Linux的Shell命令.html-ec7c37c1.js" as="script"><link rel="prefetch" href="/assets/Python-PEP8自动格式化代码.html-96941a06.js" as="script"><link rel="prefetch" href="/assets/Python-pip操作.html-da4b531e.js" as="script"><link rel="prefetch" href="/assets/Python-业务服务监控.html-7ae5f331.js" as="script"><link rel="prefetch" href="/assets/Python-从文件逐行读取数据.html-1c0bff8f.js" as="script"><link rel="prefetch" href="/assets/Python-检查URL是否能正常访问.html-24e7acd8.js" as="script"><link rel="prefetch" href="/assets/Python-爬取网易云音乐.html-3a8e5338.js" as="script"><link rel="prefetch" href="/assets/Python-读取目录下的所有内容.html-6611a9c3.js" as="script"><link rel="prefetch" href="/assets/案例研究-文本统计.html-9d7be4f3.js" as="script"><link rel="prefetch" href="/assets/SQLAlchemy.html-493dd8d8.js" as="script"><link rel="prefetch" href="/assets/Python-List深入概述.html-82a3ad2d.js" as="script"><link rel="prefetch" href="/assets/Python-面向对象编程(OOP).html-76b7f14f.js" as="script"><link rel="prefetch" href="/assets/in-out.html-80ecc3ce.js" as="script"><link rel="prefetch" href="/assets/try-except.html-b45b10fe.js" as="script"><link rel="prefetch" href="/assets/dnspython.html-66f68af9.js" as="script"><link rel="prefetch" href="/assets/ipy.html-62c449d0.js" as="script"><link rel="prefetch" href="/assets/os.html-98b53437.js" as="script"><link rel="prefetch" href="/assets/psutil.html-6388a7a4.js" as="script"><link rel="prefetch" href="/assets/smtplib.html-712d39c2.js" as="script"><link rel="prefetch" href="/assets/index.html-e0f96cb8.js" as="script"><link rel="prefetch" href="/assets/setting.html-02702b7b.js" as="script"><link rel="prefetch" href="/assets/Playbook-2.html-75de31f1.js" as="script"><link rel="prefetch" href="/assets/YAML-文件格式.html-968e99b6.js" as="script"><link rel="prefetch" href="/assets/基本操作.html-cb28c554.js" as="script"><link rel="prefetch" href="/assets/安装.html-ebc50efe.js" as="script"><link rel="prefetch" href="/assets/简介.html-4e8307d6.js" as="script"><link rel="prefetch" href="/assets/Anaconda.html-e35c2e09.js" as="script"><link rel="prefetch" href="/assets/IptableInfo.html-6dc1c159.js" as="script"><link rel="prefetch" href="/assets/IptablesFormater.html-5c45aefb.js" as="script"><link rel="prefetch" href="/assets/alias.html-bbc696e0.js" as="script"><link rel="prefetch" href="/assets/commands.html-9dcd5829.js" as="script"><link rel="prefetch" href="/assets/dstat.html-9fa073e6.js" as="script"><link rel="prefetch" href="/assets/history.html-1ae53374.js" as="script"><link rel="prefetch" href="/assets/unzip.html-64ac55dd.js" as="script"><link rel="prefetch" href="/assets/userSettings.html-b6ec80b9.js" as="script"><link rel="prefetch" href="/assets/eNSP-静态路由实验.html-21c0c894.js" as="script"><link rel="prefetch" href="/assets/一张图解释8种流行的网络协议.html-1587e5c0.js" as="script"><link rel="prefetch" href="/assets/交换机端口模式.html-75c5c160.js" as="script"><link rel="prefetch" href="/assets/华为eNSP模拟软件使用.html-09b6cc65.js" as="script"><link rel="prefetch" href="/assets/华为交换机配置命令.html-cefa3b01.js" as="script"><link rel="prefetch" href="/assets/反子网掩码.html-7019d638.js" as="script"><link rel="prefetch" href="/assets/Linux-系统服务启动文件.html-de855c3a.js" as="script"><link rel="prefetch" href="/assets/Linux-系统服务配置.html-186fde4f.js" as="script"><link rel="prefetch" href="/assets/解释 Jenkins CI-CD 管道.html-1deb9883.js" as="script"><link rel="prefetch" href="/assets/Python-Flask中的GitHub-OAuth.html-629782ac.js" as="script"><link rel="prefetch" href="/assets/chapt-1.html-2b2e9bc2.js" as="script"><link rel="prefetch" href="/assets/chapt-2.html-2652a461.js" as="script"><link rel="prefetch" href="/assets/chapt-3.html-4e59dfd0.js" as="script"><link rel="prefetch" href="/assets/flask-example.html-b96b26dd.js" as="script"><link rel="prefetch" href="/assets/ansibleDeploy.html-5010aff5.js" as="script"><link rel="prefetch" href="/assets/yum-module.html-bc673ebd.js" as="script"><link rel="prefetch" href="/assets/shell-脚本执行消耗的时间.html-6b3c4f6d.js" as="script"><link rel="prefetch" href="/assets/shell-自动生成简介.html-a74cba83.js" as="script"><link rel="prefetch" href="/assets/Docker-参数.html-74f14614.js" as="script"><link rel="prefetch" href="/assets/Docker系列学习-01.docker介绍.html-6985b743.js" as="script"><link rel="prefetch" href="/assets/Docker系列学习-02.安装docker.html-bfb94152.js" as="script"><link rel="prefetch" href="/assets/Docker系列学习-03.使用Docker镜像.html-e191820e.js" as="script"><link rel="prefetch" href="/assets/Docker系列学习-04.利用commit理解镜像构成.html-68322b53.js" as="script"><link rel="prefetch" href="/assets/Docker系列学习-05.操作Docker容器.html-84fb8ef9.js" as="script"><link rel="prefetch" href="/assets/Docker系列学习-06.使用Dockerfile定制镜像.html-bb89a6bc.js" as="script"><link rel="prefetch" href="/assets/Docker系列学习-07.Dockerfile指令详解.html-df852864.js" as="script"><link rel="prefetch" href="/assets/Docker系列学习-08.Dockerfile多阶段创建.html-4c4bd5b3.js" as="script"><link rel="prefetch" href="/assets/Docker系列学习-09.访问仓库.html-b56eef42.js" as="script"><link rel="prefetch" href="/assets/Docker系列学习-10.修改docker启动项.html-90222b49.js" as="script"><link rel="prefetch" href="/assets/Docker系列学习-11.Nexu3.x的私有仓库.html-ed260933.js" as="script"><link rel="prefetch" href="/assets/Docker系列学习-12.设置docker-hub加速器地址.html-53da5c7d.js" as="script"><link rel="prefetch" href="/assets/Docker系列学习-13.数据管理.html-e4c1227f.js" as="script"><link rel="prefetch" href="/assets/Docker系列学习-14.使用网络.html-140f5f01.js" as="script"><link rel="prefetch" href="/assets/1.1 Django背景.html-d808e3c8.js" as="script"><link rel="prefetch" href="/assets/1.2 MTV设计模式.html-04325d1a.js" as="script"><link rel="prefetch" href="/assets/1.3 Django主要功能模块.html-b03db933.js" as="script"><link rel="prefetch" href="/assets/2.1 Python的安装与配置.html-899ed0bd.js" as="script"><link rel="prefetch" href="/assets/2.2 虚拟环境的安装与配置.html-2d5cac39.js" as="script"><link rel="prefetch" href="/assets/2.3 Django安装配置.html-6e772370.js" as="script"><link rel="prefetch" href="/assets/2.4 MySQL的安装与配置.html-d2dab17a.js" as="script"><link rel="prefetch" href="/assets/ssh-keygen.html-00c716f0.js" as="script"><link rel="prefetch" href="/assets/ssh.html-4a253b15.js" as="script"><link rel="prefetch" href="/assets/3.1 Django管理工具创建项目骨架.html-8e3facde.js" as="script"><link rel="prefetch" href="/assets/3.2 修改项目的默认配置.html-86f1827c.js" as="script"><link rel="prefetch" href="/assets/3.3 初始化项目环境.html-74c5c1ce.js" as="script"><link rel="prefetch" href="/assets/4.1 构建post应用所需的数据集.html-b766da64.js" as="script"><link rel="prefetch" href="/assets/4.2 Model相关的概念和使用方法.html-74f701ea.js" as="script"><link rel="prefetch" href="/assets/4.3 Model的查询操作API.html-57d68e42.js" as="script"><link rel="prefetch" href="/assets/4.4 ORM实现原理分析.html-12a9534f.js" as="script"><link rel="prefetch" href="/assets/5.1 将Model注册到管理后台.html-8c629c33.js" as="script"><link rel="prefetch" href="/assets/5.2 Django管理后台实现原理.html-515bb99f.js" as="script"><link rel="prefetch" href="/assets/6.1：视图基础.html-759484c8.js" as="script"><link rel="prefetch" href="/assets/6.2：视图的高级特性和快捷方法.html-461ab7af.js" as="script"><link rel="prefetch" href="/assets/6.3：基于类的通用视图.html-04ea71c4.js" as="script"><link rel="prefetch" href="/assets/02：使用表单系统实现表单.html-80eacee2.js" as="script"><link rel="prefetch" href="/assets/01：模板系统基础.html-27a137d0.js" as="script"><link rel="prefetch" href="/assets/02：模板语言.html-b4e4b792.js" as="script"><link rel="prefetch" href="/assets/01：用户与身份认证.html-e02bd11b.js" as="script"><link rel="prefetch" href="/assets/02：权限管理.html-e8faef42.js" as="script"><link rel="prefetch" href="/assets/03：用户认证系统的应用.html-4920ec9b.js" as="script"><link rel="prefetch" href="/assets/01：路由系统基础.html-6c923f4b.js" as="script"><link rel="prefetch" href="/assets/01：中间件基础.html-657488ed.js" as="script"><link rel="prefetch" href="/assets/404.html-f9875e7b.js" as="script"><link rel="prefetch" href="/assets/index.html-2ce444d2.js" as="script"><link rel="prefetch" href="/assets/info.html-472a59e7.js" as="script"><link rel="prefetch" href="/assets/index.html-033b8034.js" as="script"><link rel="prefetch" href="/assets/info.html-d2836a6f.js" as="script"><link rel="prefetch" href="/assets/NodeJs-N.html-05b7b0ad.js" as="script"><link rel="prefetch" href="/assets/index.html-ab8840b2.js" as="script"><link rel="prefetch" href="/assets/index.html-3216c769.js" as="script"><link rel="prefetch" href="/assets/ChatGPT 学习技术.html-1b567e6b.js" as="script"><link rel="prefetch" href="/assets/ChatGPT 提示工程框架.html-7eb29ebc.js" as="script"><link rel="prefetch" href="/assets/ChatGPT 颜色图片生成器.html-0e991df1.js" as="script"><link rel="prefetch" href="/assets/Midjourney好用的关键词.html-b93161d5.js" as="script"><link rel="prefetch" href="/assets/StableDiffusion-WebUI进阶插件推荐.html-26ace745.js" as="script"><link rel="prefetch" href="/assets/index.html-810dbb9c.js" as="script"><link rel="prefetch" href="/assets/Python-Linux的Shell命令.html-f52ca6b0.js" as="script"><link rel="prefetch" href="/assets/Python-PEP8自动格式化代码.html-3804535c.js" as="script"><link rel="prefetch" href="/assets/Python-pip操作.html-ceebe7af.js" as="script"><link rel="prefetch" href="/assets/Python-业务服务监控.html-c93eb331.js" as="script"><link rel="prefetch" href="/assets/Python-从文件逐行读取数据.html-068a5d95.js" as="script"><link rel="prefetch" href="/assets/Python-检查URL是否能正常访问.html-604b89d3.js" as="script"><link rel="prefetch" href="/assets/Python-爬取网易云音乐.html-a2aac3f2.js" as="script"><link rel="prefetch" href="/assets/Python-读取目录下的所有内容.html-8470e9df.js" as="script"><link rel="prefetch" href="/assets/案例研究-文本统计.html-1a4c33bc.js" as="script"><link rel="prefetch" href="/assets/SQLAlchemy.html-0eab61eb.js" as="script"><link rel="prefetch" href="/assets/Python-List深入概述.html-a0e8a9fa.js" as="script"><link rel="prefetch" href="/assets/Python-面向对象编程(OOP).html-688dd399.js" as="script"><link rel="prefetch" href="/assets/in-out.html-fa519e79.js" as="script"><link rel="prefetch" href="/assets/try-except.html-19aa772e.js" as="script"><link rel="prefetch" href="/assets/dnspython.html-c5a0f3b7.js" as="script"><link rel="prefetch" href="/assets/ipy.html-1fb36c1b.js" as="script"><link rel="prefetch" href="/assets/os.html-850e1750.js" as="script"><link rel="prefetch" href="/assets/psutil.html-96e2a438.js" as="script"><link rel="prefetch" href="/assets/smtplib.html-371657fd.js" as="script"><link rel="prefetch" href="/assets/index.html-3ed36dba.js" as="script"><link rel="prefetch" href="/assets/setting.html-676a4bf8.js" as="script"><link rel="prefetch" href="/assets/Playbook-2.html-86b32007.js" as="script"><link rel="prefetch" href="/assets/YAML-文件格式.html-c9be33f1.js" as="script"><link rel="prefetch" href="/assets/基本操作.html-ed2a7751.js" as="script"><link rel="prefetch" href="/assets/安装.html-4d46501b.js" as="script"><link rel="prefetch" href="/assets/简介.html-39f9a061.js" as="script"><link rel="prefetch" href="/assets/Anaconda.html-e91b2643.js" as="script"><link rel="prefetch" href="/assets/IptableInfo.html-68e995ad.js" as="script"><link rel="prefetch" href="/assets/IptablesFormater.html-8052ae2c.js" as="script"><link rel="prefetch" href="/assets/alias.html-6413360d.js" as="script"><link rel="prefetch" href="/assets/commands.html-518c8d0c.js" as="script"><link rel="prefetch" href="/assets/dstat.html-c4a34546.js" as="script"><link rel="prefetch" href="/assets/history.html-1ef2af87.js" as="script"><link rel="prefetch" href="/assets/unzip.html-425750fe.js" as="script"><link rel="prefetch" href="/assets/userSettings.html-ce18a084.js" as="script"><link rel="prefetch" href="/assets/eNSP-静态路由实验.html-150e0c29.js" as="script"><link rel="prefetch" href="/assets/一张图解释8种流行的网络协议.html-57c35dae.js" as="script"><link rel="prefetch" href="/assets/交换机端口模式.html-4dfe9f85.js" as="script"><link rel="prefetch" href="/assets/华为eNSP模拟软件使用.html-abf61216.js" as="script"><link rel="prefetch" href="/assets/华为交换机配置命令.html-acbc03fa.js" as="script"><link rel="prefetch" href="/assets/反子网掩码.html-e492486c.js" as="script"><link rel="prefetch" href="/assets/Linux-系统服务启动文件.html-3ff5593b.js" as="script"><link rel="prefetch" href="/assets/Linux-系统服务配置.html-3a55ef03.js" as="script"><link rel="prefetch" href="/assets/解释 Jenkins CI-CD 管道.html-3e4d5edb.js" as="script"><link rel="prefetch" href="/assets/Python-Flask中的GitHub-OAuth.html-37213c2c.js" as="script"><link rel="prefetch" href="/assets/chapt-1.html-eede23b1.js" as="script"><link rel="prefetch" href="/assets/chapt-2.html-65eafdc7.js" as="script"><link rel="prefetch" href="/assets/chapt-3.html-5c60c61d.js" as="script"><link rel="prefetch" href="/assets/flask-example.html-fac7be87.js" as="script"><link rel="prefetch" href="/assets/ansibleDeploy.html-272d700a.js" as="script"><link rel="prefetch" href="/assets/yum-module.html-88274546.js" as="script"><link rel="prefetch" href="/assets/shell-脚本执行消耗的时间.html-5a1c1205.js" as="script"><link rel="prefetch" href="/assets/shell-自动生成简介.html-970e0227.js" as="script"><link rel="prefetch" href="/assets/Docker-参数.html-c44ab62c.js" as="script"><link rel="prefetch" href="/assets/Docker系列学习-01.docker介绍.html-9d9674e6.js" as="script"><link rel="prefetch" href="/assets/Docker系列学习-02.安装docker.html-e1efe8dc.js" as="script"><link rel="prefetch" href="/assets/Docker系列学习-03.使用Docker镜像.html-570af01f.js" as="script"><link rel="prefetch" href="/assets/Docker系列学习-04.利用commit理解镜像构成.html-957c08db.js" as="script"><link rel="prefetch" href="/assets/Docker系列学习-05.操作Docker容器.html-de1dab75.js" as="script"><link rel="prefetch" href="/assets/Docker系列学习-06.使用Dockerfile定制镜像.html-2d2856c5.js" as="script"><link rel="prefetch" href="/assets/Docker系列学习-07.Dockerfile指令详解.html-cef9cae0.js" as="script"><link rel="prefetch" href="/assets/Docker系列学习-08.Dockerfile多阶段创建.html-62209745.js" as="script"><link rel="prefetch" href="/assets/Docker系列学习-09.访问仓库.html-c6c57472.js" as="script"><link rel="prefetch" href="/assets/Docker系列学习-10.修改docker启动项.html-10ce77f2.js" as="script"><link rel="prefetch" href="/assets/Docker系列学习-11.Nexu3.x的私有仓库.html-a05c4df4.js" as="script"><link rel="prefetch" href="/assets/Docker系列学习-12.设置docker-hub加速器地址.html-79eba441.js" as="script"><link rel="prefetch" href="/assets/Docker系列学习-13.数据管理.html-d8bcda37.js" as="script"><link rel="prefetch" href="/assets/Docker系列学习-14.使用网络.html-9065991c.js" as="script"><link rel="prefetch" href="/assets/1.1 Django背景.html-8f6c6cb5.js" as="script"><link rel="prefetch" href="/assets/1.2 MTV设计模式.html-7bd01208.js" as="script"><link rel="prefetch" href="/assets/1.3 Django主要功能模块.html-b9ac42fd.js" as="script"><link rel="prefetch" href="/assets/2.1 Python的安装与配置.html-0de084f9.js" as="script"><link rel="prefetch" href="/assets/2.2 虚拟环境的安装与配置.html-2cbb7b13.js" as="script"><link rel="prefetch" href="/assets/2.3 Django安装配置.html-742cf73d.js" as="script"><link rel="prefetch" href="/assets/2.4 MySQL的安装与配置.html-58f98673.js" as="script"><link rel="prefetch" href="/assets/ssh-keygen.html-9b27ea1a.js" as="script"><link rel="prefetch" href="/assets/ssh.html-36d3681e.js" as="script"><link rel="prefetch" href="/assets/3.1 Django管理工具创建项目骨架.html-9a6631c8.js" as="script"><link rel="prefetch" href="/assets/3.2 修改项目的默认配置.html-40d2c831.js" as="script"><link rel="prefetch" href="/assets/3.3 初始化项目环境.html-69ee3793.js" as="script"><link rel="prefetch" href="/assets/4.1 构建post应用所需的数据集.html-e99037b0.js" as="script"><link rel="prefetch" href="/assets/4.2 Model相关的概念和使用方法.html-d189b298.js" as="script"><link rel="prefetch" href="/assets/4.3 Model的查询操作API.html-6eb764fb.js" as="script"><link rel="prefetch" href="/assets/4.4 ORM实现原理分析.html-ca08a1cc.js" as="script"><link rel="prefetch" href="/assets/5.1 将Model注册到管理后台.html-9bddbad0.js" as="script"><link rel="prefetch" href="/assets/5.2 Django管理后台实现原理.html-5cacb1d2.js" as="script"><link rel="prefetch" href="/assets/6.1：视图基础.html-10d230d6.js" as="script"><link rel="prefetch" href="/assets/6.2：视图的高级特性和快捷方法.html-2ba2eeb7.js" as="script"><link rel="prefetch" href="/assets/6.3：基于类的通用视图.html-38184d1d.js" as="script"><link rel="prefetch" href="/assets/02：使用表单系统实现表单.html-6b28f908.js" as="script"><link rel="prefetch" href="/assets/01：模板系统基础.html-b19e0646.js" as="script"><link rel="prefetch" href="/assets/02：模板语言.html-bc6451eb.js" as="script"><link rel="prefetch" href="/assets/01：用户与身份认证.html-cb758f22.js" as="script"><link rel="prefetch" href="/assets/02：权限管理.html-0c1df0e5.js" as="script"><link rel="prefetch" href="/assets/03：用户认证系统的应用.html-0eef4a43.js" as="script"><link rel="prefetch" href="/assets/01：路由系统基础.html-443c56ab.js" as="script"><link rel="prefetch" href="/assets/01：中间件基础.html-84b91f70.js" as="script"><link rel="prefetch" href="/assets/404.html-2e1ca3a8.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><!--[--><header class="navbar"><div class="toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a href="/" class=""><img class="logo" src="https://oss.moniter.top/uPic/2023-11-27/index.jpg" alt="linRichie"><span class="site-name can-hide">linRichie</span></a></span><div class="navbar-items-wrapper" style=""><!--[--><!--]--><nav class="navbar-items can-hide"><!--[--><div class="navbar-item"><a href="/fhtml/" class="" aria-label="前端"><!--[--><!--]--> 前端 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/fpython/" class="" aria-label="Python"><!--[--><!--]--> Python <!--[--><!--]--></a></div><div class="navbar-item"><a href="/flinux/" class="router-link-active" aria-label="Linux"><!--[--><!--]--> Linux <!--[--><!--]--></a></div><div class="navbar-item"><a href="/fchat/" class="" aria-label="ChatGPT"><!--[--><!--]--> ChatGPT <!--[--><!--]--></a></div><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="外链"><span class="title">外链</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="外链"><span class="title">外链</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a class="external-link" href="https://www.bilibili.com/" rel="noopener noreferrer" target="_blank" aria-label="B 站"><!--[--><!--]--> B 站 <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a class="external-link" href="https://500px.com.cn/richielin" rel="noopener noreferrer" target="_blank" aria-label="500px"><!--[--><!--]--> 500px <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!--[--><!--]--></a></li><!--]--></ul></div></div><!--]--></nav><!--[--><!--]--><button class="toggle-color-mode-button" title="toggle color mode"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><nav class="navbar-items"><!--[--><div class="navbar-item"><a href="/fhtml/" class="" aria-label="前端"><!--[--><!--]--> 前端 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/fpython/" class="" aria-label="Python"><!--[--><!--]--> Python <!--[--><!--]--></a></div><div class="navbar-item"><a href="/flinux/" class="router-link-active" aria-label="Linux"><!--[--><!--]--> Linux <!--[--><!--]--></a></div><div class="navbar-item"><a href="/fchat/" class="" aria-label="ChatGPT"><!--[--><!--]--> ChatGPT <!--[--><!--]--></a></div><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="外链"><span class="title">外链</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="外链"><span class="title">外链</span><span class="right arrow"></span></button><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a class="external-link" href="https://www.bilibili.com/" rel="noopener noreferrer" target="_blank" aria-label="B 站"><!--[--><!--]--> B 站 <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a class="external-link" href="https://500px.com.cn/richielin" rel="noopener noreferrer" target="_blank" aria-label="500px"><!--[--><!--]--> 500px <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!--[--><!--]--></a></li><!--]--></ul></div></div><!--]--></nav><!--[--><!--]--><ul class="sidebar-items"><!--[--><li><p tabindex="0" class="sidebar-item sidebar-heading active collapsible">Ansible <span class="down arrow"></span></p><ul style="" class="sidebar-item-children"><!--[--><li><a href="/flinux/Ansible/%E7%AE%80%E4%BB%8B.html" class="sidebar-item" aria-label="简介"><!--[--><!--]--> 简介 <!--[--><!--]--></a><!----></li><li><a href="/flinux/Ansible/%E5%AE%89%E8%A3%85.html" class="sidebar-item" aria-label="安装"><!--[--><!--]--> 安装 <!--[--><!--]--></a><!----></li><li><a href="/flinux/Ansible/%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C.html" class="sidebar-item" aria-label="基本操作"><!--[--><!--]--> 基本操作 <!--[--><!--]--></a><!----></li><li><a href="/flinux/Ansible/YAML-%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F.html" class="sidebar-item" aria-label="yaml格式语法"><!--[--><!--]--> yaml格式语法 <!--[--><!--]--></a><!----></li><li><p tabindex="0" class="sidebar-item active collapsible">Playbook <span class="down arrow"></span></p><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/flinux/Ansible/Playbook-1.html" class="router-link-active router-link-exact-active router-link-active sidebar-item active" aria-label="Playbook介绍"><!--[--><!--]--> Playbook介绍 <!--[--><!--]--></a><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/flinux/Ansible/Playbook-1.html#playbook核心元素" class="router-link-active router-link-exact-active sidebar-item" aria-label="Playbook核心元素"><!--[--><!--]--> Playbook核心元素 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/flinux/Ansible/Playbook-1.html#playbook语法" class="router-link-active router-link-exact-active sidebar-item" aria-label="Playbook语法"><!--[--><!--]--> Playbook语法 <!--[--><!--]--></a><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/flinux/Ansible/Playbook-1.html#一个简单的示例" class="router-link-active router-link-exact-active sidebar-item" aria-label="一个简单的示例"><!--[--><!--]--> 一个简单的示例 <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><a aria-current="page" href="/flinux/Ansible/Playbook-1.html#playbook的运行方式" class="router-link-active router-link-exact-active sidebar-item" aria-label="Playbook的运行方式"><!--[--><!--]--> Playbook的运行方式 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/flinux/Ansible/Playbook-1.html#playbook中元素属性" class="router-link-active router-link-exact-active sidebar-item" aria-label="Playbook中元素属性"><!--[--><!--]--> Playbook中元素属性 <!--[--><!--]--></a><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/flinux/Ansible/Playbook-1.html#主机与用户" class="router-link-active router-link-exact-active sidebar-item" aria-label="主机与用户"><!--[--><!--]--> 主机与用户 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/flinux/Ansible/Playbook-1.html#tasks任务列表" class="router-link-active router-link-exact-active sidebar-item" aria-label="tasks任务列表"><!--[--><!--]--> tasks任务列表 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/flinux/Ansible/Playbook-1.html#handlers与notify" class="router-link-active router-link-exact-active sidebar-item" aria-label="Handlers与Notify"><!--[--><!--]--> Handlers与Notify <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><a aria-current="page" href="/flinux/Ansible/Playbook-1.html#playbook中变量的使用" class="router-link-active router-link-exact-active sidebar-item" aria-label="Playbook中变量的使用"><!--[--><!--]--> Playbook中变量的使用 <!--[--><!--]--></a><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/flinux/Ansible/Playbook-1.html#命令行指定变量" class="router-link-active router-link-exact-active sidebar-item" aria-label="命令行指定变量"><!--[--><!--]--> 命令行指定变量 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/flinux/Ansible/Playbook-1.html#hosts文件中定义变量" class="router-link-active router-link-exact-active sidebar-item" aria-label="hosts文件中定义变量"><!--[--><!--]--> hosts文件中定义变量 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/flinux/Ansible/Playbook-1.html#playbook文件中定义变量" class="router-link-active router-link-exact-active sidebar-item" aria-label="playbook文件中定义变量"><!--[--><!--]--> playbook文件中定义变量 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/flinux/Ansible/Playbook-1.html#调用setup模块获取变量" class="router-link-active router-link-exact-active sidebar-item" aria-label="调用setup模块获取变量"><!--[--><!--]--> 调用setup模块获取变量 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/flinux/Ansible/Playbook-1.html#独立的变量yaml文件中定义" class="router-link-active router-link-exact-active sidebar-item" aria-label="独立的变量YAML文件中定义"><!--[--><!--]--> 独立的变量YAML文件中定义 <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><a aria-current="page" href="/flinux/Ansible/Playbook-1.html#playbook中标签的使用" class="router-link-active router-link-exact-active sidebar-item" aria-label="Playbook中标签的使用"><!--[--><!--]--> Playbook中标签的使用 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/flinux/Ansible/Playbook-1.html#playbook中模板的使用" class="router-link-active router-link-exact-active sidebar-item" aria-label="Playbook中模板的使用"><!--[--><!--]--> Playbook中模板的使用 <!--[--><!--]--></a><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/flinux/Ansible/Playbook-1.html#示例-通过template安装httpd" class="router-link-active router-link-exact-active sidebar-item" aria-label="示例：通过template安装httpd"><!--[--><!--]--> 示例：通过template安装httpd <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/flinux/Ansible/Playbook-1.html#template之when" class="router-link-active router-link-exact-active sidebar-item" aria-label="template之when"><!--[--><!--]--> template之when <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/flinux/Ansible/Playbook-1.html#template之with-items" class="router-link-active router-link-exact-active sidebar-item" aria-label="template之with_items"><!--[--><!--]--> template之with_items <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/flinux/Ansible/Playbook-1.html#template之for-if" class="router-link-active router-link-exact-active sidebar-item" aria-label="template之for if"><!--[--><!--]--> template之for if <!--[--><!--]--></a><!----></li><!--]--></ul></li><!--]--></ul></li><li><a href="/flinux/Ansible/Playbook-2.html" class="sidebar-item" aria-label="Playbook 操作"><!--[--><!--]--> Playbook 操作 <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><p tabindex="0" class="sidebar-item collapsible">模块 <span class="right arrow"></span></p><ul style="display:none;" class="sidebar-item-children"><!--[--><li><a href="/flinux/Ansible/AnsibleModule/yum-module.html" class="sidebar-item" aria-label="Yum模块常用参数"><!--[--><!--]--> Yum模块常用参数 <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><p tabindex="0" class="sidebar-item collapsible">实战 <span class="right arrow"></span></p><ul style="display:none;" class="sidebar-item-children"><!--[--><li><a href="/flinux/Ansible/AnsibleDeploy/ansibleDeploy.html" class="sidebar-item" aria-label="Ansible 实战"><!--[--><!--]--> Ansible 实战 <!--[--><!--]--></a><!----></li><!--]--></ul></li><!--]--></ul></li><li><p tabindex="0" class="sidebar-item sidebar-heading collapsible">Anaconda <span class="right arrow"></span></p><ul style="display:none;" class="sidebar-item-children"><!--[--><li><a href="/flinux/Anaconda/Anaconda.html" class="sidebar-item" aria-label="Anaconda命令"><!--[--><!--]--> Anaconda命令 <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><p tabindex="0" class="sidebar-item sidebar-heading collapsible">Iptables <span class="right arrow"></span></p><ul style="display:none;" class="sidebar-item-children"><!--[--><li><a href="/flinux/Iptable/IptableInfo.html" class="sidebar-item" aria-label="Iptable 防火墙"><!--[--><!--]--> Iptable 防火墙 <!--[--><!--]--></a><!----></li><li><a href="/flinux/Iptable/IptablesFormater.html" class="sidebar-item" aria-label="用法"><!--[--><!--]--> 用法 <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><p tabindex="0" class="sidebar-item sidebar-heading collapsible">Systemd <span class="right arrow"></span></p><ul style="display:none;" class="sidebar-item-children"><!--[--><li><a href="/flinux/Systemd/Linux-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1%E9%85%8D%E7%BD%AE.html" class="sidebar-item" aria-label="系统服务配置"><!--[--><!--]--> 系统服务配置 <!--[--><!--]--></a><!----></li><li><a href="/flinux/Systemd/Linux-%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1%E5%90%AF%E5%8A%A8%E6%96%87%E4%BB%B6.html" class="sidebar-item" aria-label="系统服务启动文件"><!--[--><!--]--> 系统服务启动文件 <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><p tabindex="0" class="sidebar-item sidebar-heading collapsible">Network <span class="right arrow"></span></p><ul style="display:none;" class="sidebar-item-children"><!--[--><li><a href="/flinux/Network/%E4%B8%80%E5%BC%A0%E5%9B%BE%E8%A7%A3%E9%87%8A8%E7%A7%8D%E6%B5%81%E8%A1%8C%E7%9A%84%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE.html" class="sidebar-item" aria-label="用一张图解释 8 种流行的网络协议"><!--[--><!--]--> 用一张图解释 8 种流行的网络协议 <!--[--><!--]--></a><!----></li><li><a href="/flinux/Network/%E5%8F%8D%E5%AD%90%E7%BD%91%E6%8E%A9%E7%A0%81.html" class="sidebar-item" aria-label="反子网掩码"><!--[--><!--]--> 反子网掩码 <!--[--><!--]--></a><!----></li><li><a href="/flinux/Network/%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%AB%AF%E5%8F%A3%E6%A8%A1%E5%BC%8F.html" class="sidebar-item" aria-label="交换机端口模式"><!--[--><!--]--> 交换机端口模式 <!--[--><!--]--></a><!----></li><li><a href="/flinux/Network/%E5%8D%8E%E4%B8%BAeNSP%E6%A8%A1%E6%8B%9F%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8.html" class="sidebar-item" aria-label="eNSP 软件"><!--[--><!--]--> eNSP 软件 <!--[--><!--]--></a><!----></li><li><a href="/flinux/Network/%E5%8D%8E%E4%B8%BA%E4%BA%A4%E6%8D%A2%E6%9C%BA%E9%85%8D%E7%BD%AE%E5%91%BD%E4%BB%A4.html" class="sidebar-item" aria-label="华为交换机-常用命令.md"><!--[--><!--]--> 华为交换机-常用命令.md <!--[--><!--]--></a><!----></li><li><a href="/flinux/Network/eNSP-%E9%9D%99%E6%80%81%E8%B7%AF%E7%94%B1%E5%AE%9E%E9%AA%8C.html" class="sidebar-item" aria-label="eNSP静态路由实验"><!--[--><!--]--> eNSP静态路由实验 <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><p tabindex="0" class="sidebar-item sidebar-heading collapsible">Commands <span class="right arrow"></span></p><ul style="display:none;" class="sidebar-item-children"><!--[--><li><a href="/flinux/Commands/alias.html" class="sidebar-item" aria-label="命令别名:alias"><!--[--><!--]--> 命令别名:alias <!--[--><!--]--></a><!----></li><li><a href="/flinux/Commands/dstat.html" class="sidebar-item" aria-label="多类型资源统计工具: dstat"><!--[--><!--]--> 多类型资源统计工具: dstat <!--[--><!--]--></a><!----></li><li><a href="/flinux/Commands/history.html" class="sidebar-item" aria-label="history配置"><!--[--><!--]--> history配置 <!--[--><!--]--></a><!----></li><li><a href="/flinux/Commands/unzip.html" class="sidebar-item" aria-label="unzip命令"><!--[--><!--]--> unzip命令 <!--[--><!--]--></a><!----></li><li><a href="/flinux/Commands/userSettings.html" class="sidebar-item" aria-label="Linux用户到期登录时间和随机密码"><!--[--><!--]--> Linux用户到期登录时间和随机密码 <!--[--><!--]--></a><!----></li><li><a href="/flinux/Commands/commands.html" class="sidebar-item" aria-label="常用 Command"><!--[--><!--]--> 常用 Command <!--[--><!--]--></a><!----></li><li><p tabindex="0" class="sidebar-item collapsible">ssh <span class="right arrow"></span></p><ul style="display:none;" class="sidebar-item-children"><!--[--><li><a href="/flinux/Commands/ssh/ssh-keygen.html" class="sidebar-item" aria-label="ssh-keygen"><!--[--><!--]--> ssh-keygen <!--[--><!--]--></a><!----></li><li><a href="/flinux/Commands/ssh/ssh.html" class="sidebar-item" aria-label="linux ssh命令"><!--[--><!--]--> linux ssh命令 <!--[--><!--]--></a><!----></li><!--]--></ul></li><!--]--></ul></li><li><p tabindex="0" class="sidebar-item sidebar-heading collapsible">CI/CD <span class="right arrow"></span></p><ul style="display:none;" class="sidebar-item-children"><!--[--><li><a href="/flinux/Cicd/%E8%A7%A3%E9%87%8A%20Jenkins%20CI-CD%20%E7%AE%A1%E9%81%93.html" class="sidebar-item" aria-label="初级 DevOps 工程师解释 Jenkins CI/CD 管道"><!--[--><!--]--> 初级 DevOps 工程师解释 Jenkins CI/CD 管道 <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><p tabindex="0" class="sidebar-item sidebar-heading collapsible">Docker <span class="right arrow"></span></p><ul style="display:none;" class="sidebar-item-children"><!--[--><li><p tabindex="0" class="sidebar-item collapsible">Docker系列学习 <span class="right arrow"></span></p><ul style="display:none;" class="sidebar-item-children"><!--[--><li><a href="/flinux/Docker/Docker%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0/Docker-%E5%8F%82%E6%95%B0.html" class="sidebar-item" aria-label="Docker 参数"><!--[--><!--]--> Docker 参数 <!--[--><!--]--></a><!----></li><li><a href="/flinux/Docker/Docker%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0/Docker%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0-01.docker%E4%BB%8B%E7%BB%8D.html" class="sidebar-item" aria-label="01. 什么是Docker"><!--[--><!--]--> 01. 什么是Docker <!--[--><!--]--></a><!----></li><li><a href="/flinux/Docker/Docker%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0/Docker%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0-02.%E5%AE%89%E8%A3%85docker.html" class="sidebar-item" aria-label="02. Docker安装"><!--[--><!--]--> 02. Docker安装 <!--[--><!--]--></a><!----></li><li><a href="/flinux/Docker/Docker%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0/Docker%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0-03.%E4%BD%BF%E7%94%A8Docker%E9%95%9C%E5%83%8F.html" class="sidebar-item" aria-label="03. 使用Docker镜像"><!--[--><!--]--> 03. 使用Docker镜像 <!--[--><!--]--></a><!----></li><li><a href="/flinux/Docker/Docker%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0/Docker%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0-04.%E5%88%A9%E7%94%A8commit%E7%90%86%E8%A7%A3%E9%95%9C%E5%83%8F%E6%9E%84%E6%88%90.html" class="sidebar-item" aria-label="04. 利用commit理解镜像构成"><!--[--><!--]--> 04. 利用commit理解镜像构成 <!--[--><!--]--></a><!----></li><li><a href="/flinux/Docker/Docker%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0/Docker%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0-05.%E6%93%8D%E4%BD%9CDocker%E5%AE%B9%E5%99%A8.html" class="sidebar-item" aria-label="05. 操作Docker容器"><!--[--><!--]--> 05. 操作Docker容器 <!--[--><!--]--></a><!----></li><li><a href="/flinux/Docker/Docker%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0/Docker%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0-06.%E4%BD%BF%E7%94%A8Dockerfile%E5%AE%9A%E5%88%B6%E9%95%9C%E5%83%8F.html" class="sidebar-item" aria-label="06. 使用Dockerfile定制镜像"><!--[--><!--]--> 06. 使用Dockerfile定制镜像 <!--[--><!--]--></a><!----></li><li><a href="/flinux/Docker/Docker%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0/Docker%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0-07.Dockerfile%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3.html" class="sidebar-item" aria-label="07. Dockerfile指令详解"><!--[--><!--]--> 07. Dockerfile指令详解 <!--[--><!--]--></a><!----></li><li><a href="/flinux/Docker/Docker%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0/Docker%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0-08.Dockerfile%E5%A4%9A%E9%98%B6%E6%AE%B5%E5%88%9B%E5%BB%BA.html" class="sidebar-item" aria-label="08. Dockerfile多阶段创建"><!--[--><!--]--> 08. Dockerfile多阶段创建 <!--[--><!--]--></a><!----></li><li><a href="/flinux/Docker/Docker%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0/Docker%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0-09.%E8%AE%BF%E9%97%AE%E4%BB%93%E5%BA%93.html" class="sidebar-item" aria-label="09. 访问仓库"><!--[--><!--]--> 09. 访问仓库 <!--[--><!--]--></a><!----></li><li><a href="/flinux/Docker/Docker%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0/Docker%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0-10.%E4%BF%AE%E6%94%B9docker%E5%90%AF%E5%8A%A8%E9%A1%B9.html" class="sidebar-item" aria-label="10. 修改docker的启动项"><!--[--><!--]--> 10. 修改docker的启动项 <!--[--><!--]--></a><!----></li><li><a href="/flinux/Docker/Docker%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0/Docker%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0-11.Nexu3.x%E7%9A%84%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93.html" class="sidebar-item" aria-label="11. Nexus3.x的私有仓库"><!--[--><!--]--> 11. Nexus3.x的私有仓库 <!--[--><!--]--></a><!----></li><li><a href="/flinux/Docker/Docker%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0/Docker%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0-12.%E8%AE%BE%E7%BD%AEdocker-hub%E5%8A%A0%E9%80%9F%E5%99%A8%E5%9C%B0%E5%9D%80.html" class="sidebar-item" aria-label="12. docker-hub加速器地址阿里云"><!--[--><!--]--> 12. docker-hub加速器地址阿里云 <!--[--><!--]--></a><!----></li><li><a href="/flinux/Docker/Docker%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0/Docker%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0-13.%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86.html" class="sidebar-item" aria-label="13. 数据管理"><!--[--><!--]--> 13. 数据管理 <!--[--><!--]--></a><!----></li><li><a href="/flinux/Docker/Docker%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0/Docker%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0-14.%E4%BD%BF%E7%94%A8%E7%BD%91%E7%BB%9C.html" class="sidebar-item" aria-label="14. 使用网络"><!--[--><!--]--> 14. 使用网络 <!--[--><!--]--></a><!----></li><!--]--></ul></li><!--]--></ul></li><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><!--]--><div><h1 id="playbook介绍" tabindex="-1"><a class="header-anchor" href="#playbook介绍" aria-hidden="true">#</a> Playbook介绍</h1><p><a href="https://ansible-tran.readthedocs.io/en/latest/docs/playbooks.html" target="_blank" rel="noopener noreferrer">playbook参考文档<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span></a></p><p><code>Playbook</code>与<code>ad-hoc</code>相比,是一种完全不同的运用ansible的方式，类似与<code>saltstack</code>的<code>state</code>状态文件。<code>ad-hoc</code>无法持久使用，<code>playbook</code>可以持久使用。 <code>playbook</code>是由一个或多个<code>play</code>组成的列表，<code>play</code>的主要功能在于将事先归并为一组的主机装扮成事先通过<code>ansible</code>中的<code>task</code>定义好的角色。从根本上来讲，所谓的<code>task</code>无非是调用<code>ansible</code>的一个<code>module</code>。将多个<code>play</code>组织在一个<code>playbook</code>中，即可以让它们联合起来按事先编排的机制完成某一任务</p><h2 id="playbook核心元素" tabindex="-1"><a class="header-anchor" href="#playbook核心元素" aria-hidden="true">#</a> Playbook核心元素</h2><ul><li>Hosts 执行的远程主机列表</li><li>Tasks 任务集</li><li>Varniables 内置变量或自定义变量在playbook中调用</li><li>Templates 模板，即使用模板语法的文件，比如配置文件等</li><li>Handlers 和notity结合使用，由特定条件触发的操作，满足条件方才执行，否则不执行</li><li>tags 标签，指定某条任务执行，用于选择运行playbook中的部分代码。</li></ul><h2 id="playbook语法" tabindex="-1"><a class="header-anchor" href="#playbook语法" aria-hidden="true">#</a> Playbook语法</h2><p><code>playbook</code>使用<code>yaml</code>语法格式，后缀可以是<code>yaml</code>,也可以是<code>yml</code>。</p><ul><li>在单一一个<code>playbook</code>文件中，可以连续三个连子号(<code>---</code>)区分多个<code>play</code>。还有选择性的连续三个点好(<code>...</code>)用来表示<code>play</code>的结尾，也可省略。</li><li>次行开始正常写<code>playbook</code>的内容，一般都会写上描述该<code>playbook</code>的功能。</li><li>使用#号注释代码。</li><li>缩进必须统一，不能空格和<code>tab</code>混用。</li><li>缩进的级别也必须是一致的，同样的缩进代表同样的级别，程序判别配置的级别是通过缩进结合换行实现的。</li><li><code>YAML</code>文件内容和<code>Linux</code>系统大小写判断方式保持一致，是区分大小写的，<code>k/v</code>的值均需大小写敏感</li><li><code>k/v</code>的值可同行写也可以换行写。同行使用:分隔。</li><li><code>v</code>可以是个字符串，也可以是一个列表</li><li>一个完整的代码块功能需要最少元素包括 <code>name: task</code></li></ul><h3 id="一个简单的示例" tabindex="-1"><a class="header-anchor" href="#一个简单的示例" aria-hidden="true">#</a> 一个简单的示例</h3><ul><li><p>创建playbook文件</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">cat</span> <span class="token operator">&gt;</span> playbook01.yml <span class="token operator">&lt;&lt;</span> <span class="token string">EOF
+---                       #固定格式
+- hosts: 192.168.1.31     #定义需要执行主机
+  remote_user: root       #远程用户
+  vars:                   #定义变量
+    http_port: 8088       #变量
+
+  tasks:                             #定义一个任务的开始
+    - name: create new file          #定义任务的名称
+      file: name=/tmp/playtest.txt state=touch   #调用模块，具体要做的事情
+    - name: create new user
+      user: name=test02 system=yes shell=/sbin/nologin
+    - name: install package
+      yum: name=httpd
+    - name: config httpd
+      template: src=./httpd.conf dest=/etc/httpd/conf/httpd.conf
+      notify:                 #定义执行一个动作(action)让handlers来引用执行，与handlers配合使用
+        - restart apache      #notify要执行的动作，这里必须与handlers中的name定义内容一致
+    - name: copy index.html
+      copy: src=/var/www/html/index.html dest=/var/www/html/index.html
+    - name: start httpd
+      service: name=httpd state=started
+  handlers:                                    #处理器：更加tasks中notify定义的action触发执行相应的处理动作
+    - name: restart apache                     #要与notify定义的内容相同
+      service: name=httpd state=restarted      #触发要执行的动作
+EOF</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li><li><p>测试页面准备</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token builtin class-name">echo</span> <span class="token string">&quot;&lt;h1&gt;playbook test file&lt;/h1&gt;&quot;</span> <span class="token operator">&gt;&gt;</span>/var/www/html/index.html
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></li><li><p>配置文件准备</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">cat</span> httpd.conf <span class="token operator">|</span><span class="token function">grep</span> ^Listen
+    Listen <span class="token punctuation">{</span><span class="token punctuation">{</span> http_port <span class="token punctuation">}</span><span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div></li><li><p>执行playbook， 第一次执行可以加-C选项，检查写的playbook是否ok</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>ansible-playbook playbook01.yml
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></li><li><p>输出结果</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>PLAY [192.168.1.31] *********************************************************************************************
+TASK [Gathering Facts] ******************************************************************************************
+ok: [192.168.1.31]
+TASK [create new file] ******************************************************************************************
+...
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li><li><p>验证上面playbook执行的结果</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>ansible <span class="token number">192.168</span>.1.31 <span class="token parameter variable">-m</span> shell <span class="token parameter variable">-a</span> <span class="token string">&#39;ls /tmp/playtest.txt &amp;&amp; id test02&#39;</span>
+<span class="token comment"># 192.168.1.31 | CHANGED | rc=0 &gt;&gt; /tmp/playtest.txt uid=990(test02) gid=985(test02) 组=985(test02)</span>
+
+<span class="token function">curl</span> <span class="token number">192.168</span>.1.31:8088
+<span class="token comment"># &lt;h1&gt;playbook test file&lt;/h1&gt;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li></ul><h2 id="playbook的运行方式" tabindex="-1"><a class="header-anchor" href="#playbook的运行方式" aria-hidden="true">#</a> Playbook的运行方式</h2><p>通过<code>ansible-playbook</code>命令运行 格式：<code>ansible-playbook ... [options]</code></p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>ansible-playbook <span class="token parameter variable">-h</span>
+
+<span class="token comment">#ansible-playbook常用选项：</span>
+<span class="token comment"># --check  or -C    #只检测可能会发生的改变，但不真正执行操作</span>
+<span class="token comment"># --list-hosts      #列出运行任务的主机</span>
+<span class="token comment"># --list-tags       #列出playbook文件中定义所有的tags</span>
+<span class="token comment"># --list-tasks      #列出playbook文件中定义的所以任务集</span>
+<span class="token comment"># --limit           #主机列表 只针对主机列表中的某个主机或者某个组执行</span>
+<span class="token comment"># -f                #指定并发数，默认为5个</span>
+<span class="token comment"># -t                #指定tags运行，运行某一个或者多个tags。（前提playbook中有定义tags）</span>
+<span class="token comment"># -v                #显示过程  -vv  -vvv更详细</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="playbook中元素属性" tabindex="-1"><a class="header-anchor" href="#playbook中元素属性" aria-hidden="true">#</a> Playbook中元素属性</h2><h3 id="主机与用户" tabindex="-1"><a class="header-anchor" href="#主机与用户" aria-hidden="true">#</a> 主机与用户</h3><p>在一个<code>playbook</code>开始时，最先定义的是要操作的主机和用户</p><div class="language-yaml line-numbers-mode" data-ext="yml"><pre class="language-yaml"><code><span class="token punctuation">---</span>
+<span class="token punctuation">-</span> <span class="token key atrule">hosts</span><span class="token punctuation">:</span> 192.168.1.31
+  <span class="token key atrule">remote_user</span><span class="token punctuation">:</span> root
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>除了上面的定义外，还可以在某一个<code>tasks</code>中定义要执行该任务的远程用户</p><div class="language-yaml line-numbers-mode" data-ext="yml"><pre class="language-yaml"><code><span class="token key atrule">tasks</span><span class="token punctuation">:</span> 
+  <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> run df <span class="token punctuation">-</span>h
+    <span class="token key atrule">remote_user</span><span class="token punctuation">:</span> test
+    <span class="token key atrule">shell</span><span class="token punctuation">:</span> name=df <span class="token punctuation">-</span>h
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>还可以定义使用<code>sudo</code>授权用户执行该任务</p><div class="language-yaml line-numbers-mode" data-ext="yml"><pre class="language-yaml"><code><span class="token key atrule">tasks</span><span class="token punctuation">:</span> 
+  <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> run df <span class="token punctuation">-</span>h
+    <span class="token key atrule">sudo_user</span><span class="token punctuation">:</span> test
+    <span class="token key atrule">sudo</span><span class="token punctuation">:</span> yes
+    <span class="token key atrule">shell</span><span class="token punctuation">:</span> name=df <span class="token punctuation">-</span>h
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="tasks任务列表" tabindex="-1"><a class="header-anchor" href="#tasks任务列表" aria-hidden="true">#</a> tasks任务列表</h3><p>每一个<code>task</code>必须有一个名称<code>name</code>,这样在运行<code>playbook</code>时，从其输出的任务执行信息中可以很清楚的辨别是属于哪一个<code>task</code>的，如果没有定义 <code>name</code>，<code>action</code>的值将会用作输出信息中标记特定的<code>task</code>。 每一个<code>playbook</code>中可以包含一个或者多个<code>tasks</code>任务列表，每一个<code>tasks</code>完成具体的一件事，（任务模块）比如创建一个用户或者安装一个软件等，在<code>hosts</code>中定义的主机或者主机组都将会执行这个被定义的<code>tasks</code>。</p><div class="language-yaml line-numbers-mode" data-ext="yml"><pre class="language-yaml"><code><span class="token key atrule">tasks</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> create new file
+    <span class="token key atrule">file</span><span class="token punctuation">:</span> path=/tmp/test01.txt state=touch
+  <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> create new user
+    <span class="token key atrule">user</span><span class="token punctuation">:</span> name=test001 state=present
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="handlers与notify" tabindex="-1"><a class="header-anchor" href="#handlers与notify" aria-hidden="true">#</a> Handlers与Notify</h3><p>很多时候当我们某一个配置发生改变，我们需要重启服务，（比如httpd配置文件文件发生改变了）这时候就可以用到<code>handlers</code>和<code>notify</code>了； (当发生改动时)<code>notify actions</code>会在<code>playbook</code>的每一个task结束时被触发，而且即使有多个不同task通知改动的发生，<code>notify actions</code>知会被触发一次；比如多个<code>resources</code>指出因为一个配置文件被改动，所以<code>apache</code>需要重启，但是重新启动的操作知会被执行一次。</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">cat</span> <span class="token operator">&gt;</span> httpd.yml <span class="token operator">&lt;&lt;</span><span class="token string">EOF
+#用于安装httpd并配置启动
+---
+- hosts: 192.168.1.31
+  remote_user: root
+
+  tasks:
+  - name: install httpd
+    yum: name=httpd state=installed
+  - name: config httpd
+    template: src=/root/httpd.conf dest=/etc/httpd/conf/httpd.conf
+    notify:
+      - restart httpd
+  - name: start httpd
+    service: name=httpd state=started
+
+  handlers:
+    - name: restart httpd
+      service: name=httpd state=restarted
+
+#这里只要对httpd.conf配置文件作出了修改，修改后需要重启生效，在tasks中定义了restart httpd这个action，然后在handlers中引用上面tasks中定义的notify。
+EOF</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="playbook中变量的使用" tabindex="-1"><a class="header-anchor" href="#playbook中变量的使用" aria-hidden="true">#</a> Playbook中变量的使用</h2><p><strong>环境说明</strong>：这里配置了两个组，一个apache组和一个nginx组</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">cat</span> <span class="token operator">&gt;</span> /etc/ansible/hosts <span class="token operator">&lt;&lt;</span><span class="token string">EOF
+[apache]
+192.168.1.36
+192.168.1.33
+
+[nginx]
+192.168.1.3[1:2]
+EOF</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="命令行指定变量" tabindex="-1"><a class="header-anchor" href="#命令行指定变量" aria-hidden="true">#</a> 命令行指定变量</h3><p>执行<code>playbook</code>时候通过参数<code>-e</code>传入变量，这样传入的变量在整个<code>playbook</code>中都可以被调用，属于全局变量</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">cat</span> <span class="token operator">&gt;</span> variables.yml <span class="token operator">&lt;&lt;</span><span class="token string">EOF
+    ---
+    - hosts: all
+      remote_user: root
+
+      tasks:
+        - name: install pkg
+          yum: name={{ pkg }}
+EOF</span>
+<span class="token comment"># 执行playbook 指定pkg</span>
+ansible-playbook <span class="token parameter variable">-e</span> <span class="token string">&quot;pkg=httpd&quot;</span> variables.yml
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="hosts文件中定义变量" tabindex="-1"><a class="header-anchor" href="#hosts文件中定义变量" aria-hidden="true">#</a> hosts文件中定义变量</h3><p>在<code>/etc/ansible/hosts</code>文件中定义变量，可以针对每个主机定义不同的变量，也可以定义一个组的变量，然后直接在<code>playbook</code>中直接调用。注意，组中定义的变量没有单个主机中的优先级高。</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token comment"># 编辑hosts文件定义变量</span>
+<span class="token function">cat</span> <span class="token operator">&gt;</span> /etc/ansible/hosts <span class="token operator">&lt;&lt;</span><span class="token string">EOF
+[apache]
+192.168.1.36 webdir=/opt/test     #定义单个主机的变量
+192.168.1.33
+[apache:vars]      #定义整个组的统一变量
+webdir=/web/test
+
+[nginx]
+192.168.1.3[1:2]
+[nginx:vars]
+webdir=/opt/web
+EOF</span>
+
+<span class="token comment"># 编辑playbook文件</span>
+<span class="token function">cat</span> <span class="token operator">&gt;</span> variables.yml <span class="token operator">&lt;&lt;</span><span class="token string">EOF
+---
+- hosts: all
+  remote_user: root
+
+  tasks:
+    - name: create webdir
+      file: name={{ webdir }} state=directory   #引用变量
+
+EOF</span>
+<span class="token comment"># 执行playbook</span>
+ansible-playbook variables.yml
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="playbook文件中定义变量" tabindex="-1"><a class="header-anchor" href="#playbook文件中定义变量" aria-hidden="true">#</a> playbook文件中定义变量</h3><p>编写<code>playbook</code>时，直接在里面定义变量，然后直接引用，可以定义多个变量；注意：如果在执行<code>playbook</code>时，又通过<code>-e</code>参数指定变量的值，那么会以<code>-e</code>参数指定的为准。</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token comment"># 编辑playbook</span>
+<span class="token function">cat</span> <span class="token operator">&gt;</span> variables.yml <span class="token operator">&lt;&lt;</span><span class="token string">EOF
+---
+- hosts: all
+  remote_user: root
+  vars:                #定义变量
+    pkg: nginx         #变量1
+    dir: /tmp/test1    #变量2
+
+  tasks:
+    - name: install pkg
+      yum: name={{ pkg }} state=installed    #引用变量
+    - name: create new dir
+      file: name={{ dir }} state=directory   #引用变量
+EOF</span>
+
+<span class="token comment"># 执行playbook</span>
+ansible-playbook variables.yml
+
+<span class="token comment"># 如果执行时候又重新指定了变量的值，那么会已重新指定的为准</span>
+ansible-playbook <span class="token parameter variable">-e</span> <span class="token string">&quot;dir=/tmp/test2&quot;</span> variables.yml
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="调用setup模块获取变量" tabindex="-1"><a class="header-anchor" href="#调用setup模块获取变量" aria-hidden="true">#</a> 调用setup模块获取变量</h3><p><code>setup</code>模块默认是获取主机信息的，有时候在<code>playbook</code>中需要用到，所以可以直接调用。常用的参数[参考](<a href="https://buji595.github.io/2019/05/27/Ansible" target="_blank" rel="noopener noreferrer">https://buji595.github.io/2019/05/27/Ansible<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span></a> Ad-hoc常用Module/#setup)</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token comment"># 编辑playbook文件</span>
+<span class="token function">cat</span> <span class="token operator">&gt;</span> variables.yml <span class="token operator">&lt;&lt;</span><span class="token string">EOF
+---
+- hosts: all
+  remote_user: root
+
+  tasks:
+    - name: create file
+      file: name={{ ansible_fqdn }}.log state=touch   #引用setup中的ansible_fqdn
+
+EOF</span>
+<span class="token comment"># 执行playbook</span>
+ansible-playbook variables.yml
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="独立的变量yaml文件中定义" tabindex="-1"><a class="header-anchor" href="#独立的变量yaml文件中定义" aria-hidden="true">#</a> 独立的变量YAML文件中定义</h3><p>为了方便管理将所有的变量统一放在一个独立的变量<code>YAML</code>文件中，<code>laybook</code>文件直接引用文件调用变量即可。</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token comment"># 定义存放变量的文件</span>
+<span class="token function">cat</span> <span class="token operator">&gt;</span> var.yml <span class="token operator">&lt;&lt;</span><span class="token string">EOF
+var1: vsftpd
+var2: httpd
+EOF</span>
+
+<span class="token comment"># 编写playbook</span>
+<span class="token function">cat</span> <span class="token operator">&gt;</span> variables.yml <span class="token operator">&lt;&lt;</span> <span class="token string">EOF
+---
+- hosts: all
+  remote_user: root
+  vars_files:    #引用变量文件
+    - ./var.yml   #指定变量文件的path（这里可以是绝对路径，也可以是相对路径）
+
+  tasks:
+    - name: install package
+      yum: name={{ var1 }}   #引用变量
+    - name: create file
+      file: name=/tmp/{{ var2 }}.log state=touch   #引用变量
+EOF</span>
+
+<span class="token comment"># 执行playbook</span>
+ansible-playbook  variables.yml
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="playbook中标签的使用" tabindex="-1"><a class="header-anchor" href="#playbook中标签的使用" aria-hidden="true">#</a> Playbook中标签的使用</h2><ul><li><p>一个<code>playbook</code>文件中，执行时如果想执行某一个任务，那么可以给每个任务集进行打标签，这样在执行的时候可以通过<code>-t</code>选择指定标签执行，还可以通过<code>--skip-tags</code>选择除了某个标签外全部执行等。</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token comment"># 编辑playbook</span>
+<span class="token function">cat</span> <span class="token operator">&gt;</span> httpd.yml <span class="token operator">&lt;&lt;</span><span class="token string">EOF
+---
+- hosts: 192.168.1.31
+  remote_user: root
+
+  tasks:
+    - name: install httpd
+      yum: name=httpd state=installed
+      tags: inhttpd
+
+    - name: start httpd
+      service: name=httpd state=started
+      tags: sthttpd
+
+    - name: restart httpd
+      service: name=httpd state=restarted
+      tags: 
+        - rshttpd
+        - rs_httpd
+EOF</span>
+<span class="token comment"># 正常执行的结果</span>
+ansible-playbook httpd.yml 
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li></ul><ul><li><p>通过<code>-t</code>选项指定<code>tags</code>进行执行</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token comment"># 通过-t指定tags名称，多个tags用逗号隔开</span>
+ansible-playbook <span class="token parameter variable">-t</span> rshttpd httpd.yml 
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div></li><li><p>通过<code>--skip-tags</code>选项排除不执行的<code>tags</code></p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>ansible-playbook --skip-tags inhttpd httpd.yml 
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></li></ul><h2 id="playbook中模板的使用" tabindex="-1"><a class="header-anchor" href="#playbook中模板的使用" aria-hidden="true">#</a> Playbook中模板的使用</h2><p><code>template</code>模板为我们提供了动态配置服务，使用<code>jinja2</code>语言，里面支持多种条件判断、循环、逻辑运算、比较操作等。其实说白了也就是一个文件，和之前配置文件使用<code>copy</code>一样，只是使用<code>copy</code>，不能根据服务器配置不一样进行不同动态的配置。这样就不利于管理。 说明： 1、多数情况下都将<code>template</code>文件放在和<code>playbook</code>文件同级的<code>templates</code>目录下（手动创建），这样<code>playbook</code>文件中可以直接引用，会自动去找这个文件。如果放在别的地方，也可以通过绝对路径去指定。 2、模板文件后缀名为<code>.j2</code>。</p><p><a href="http://www.ansible.com.cn/docs/playbooks_loops.html#standard-loops" target="_blank" rel="noopener noreferrer">循环参考<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span></a></p><h3 id="示例-通过template安装httpd" tabindex="-1"><a class="header-anchor" href="#示例-通过template安装httpd" aria-hidden="true">#</a> 示例：通过template安装httpd</h3><ul><li><p><code>playbook</code>文件编写</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token comment">#模板示例</span>
+<span class="token function">cat</span> <span class="token operator">&gt;</span> testtmp.yml <span class="token operator">&lt;&lt;</span><span class="token string">EOF
+---
+- hosts: all
+  remote_user: root
+  vars:
+    - listen_port: 88    #定义变量
+
+  tasks:
+    - name: Install Httpd
+      yum: name=httpd state=installed
+    - name: Config Httpd
+      template: src=httpd.conf.j2 dest=/etc/httpd/conf/httpd.conf    #使用模板
+      notify: Restart Httpd
+    - name: Start Httpd
+      service: name=httpd state=started
+      
+  handlers:
+    - name: Restart Httpd
+      service: name=httpd state=restarted
+EOF</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li><li><p>模板文件准备，<code>httpd</code>配置文件准备，这里配置文件端口使用了变量</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">cat</span> templates/httpd.conf.j2 <span class="token operator">|</span><span class="token function">grep</span> ^Listen
+<span class="token comment"># Listen {{ listen_port }}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div></li><li><p>查看目录结构</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token comment"># 目录结构</span>
+tree <span class="token builtin class-name">.</span>
+    <span class="token builtin class-name">.</span>
+    ├── templates
+    │   └── httpd.conf.j2
+    └── testtmp.yml
+    <span class="token number">1</span> directory, <span class="token number">2</span> files
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li><li><p>执行<code>playbook</code>，由于<code>192.168.1.36</code>那台机器是<code>6</code>的系统，模板文件里面的配置文件是<code>7</code>上面默认的<code>httpd</code>配置文件，<code>httpd</code>版本不一样(<code>6默认版本为2.2.15，7默认版本为2.4.6</code>)，所以拷贝过去后启动报错。下面使用<code>playbook</code>中的判断语句进行处理；此处先略过</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>ansible-playbook testtmp.yml 
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></li></ul><h3 id="template之when" tabindex="-1"><a class="header-anchor" href="#template之when" aria-hidden="true">#</a> template之when</h3><p><a href="http://www.ansible.com.cn/docs/playbooks_conditionals.html#when" target="_blank" rel="noopener noreferrer">when语句参考<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span></a></p><p>条件测试：如果需要根据变量、<code>facts</code>或此前任务的执行结果来做为某<code>task</code>执行与否的前提时要用到条件测试，通过<code>when</code>语句执行，在<code>task</code>中使用<code>jinja2</code>的语法格式、 when语句： 在<code>task</code>后添加<code>when</code>子句即可使用条件测试；<code>when</code>语句支持<code>jinja2</code>表达式语法。</p><p>类似这样：</p><div class="language-yaml line-numbers-mode" data-ext="yml"><pre class="language-yaml"><code><span class="token key atrule">tasks</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">command</span><span class="token punctuation">:</span> /bin/false
+    <span class="token key atrule">register</span><span class="token punctuation">:</span> result
+    <span class="token key atrule">ignore_errors</span><span class="token punctuation">:</span> <span class="token boolean important">True</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">command</span><span class="token punctuation">:</span> /bin/something
+    <span class="token key atrule">when</span><span class="token punctuation">:</span> result<span class="token punctuation">|</span>failed
+  <span class="token punctuation">-</span> <span class="token key atrule">command</span><span class="token punctuation">:</span> /bin/something_else
+    <span class="token key atrule">when</span><span class="token punctuation">:</span> result<span class="token punctuation">|</span>success
+  <span class="token punctuation">-</span> <span class="token key atrule">command</span><span class="token punctuation">:</span> /bin/still/something_else
+    <span class="token key atrule">when</span><span class="token punctuation">:</span> result<span class="token punctuation">|</span>skipped
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="示例-通过when语句完善上面的httpd配置" tabindex="-1"><a class="header-anchor" href="#示例-通过when语句完善上面的httpd配置" aria-hidden="true">#</a> 示例：通过when语句完善上面的httpd配置</h4><ul><li><p>准备两个配置文件，一个<code>centos6</code>系统<code>httpd</code>配置文件，一个<code>centos7</code>系统httpd配置文件。</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>tree templates/
+    templates/
+    ├── httpd6.conf.j2     <span class="token comment">#6系统2.2.15版本httpd配置文件</span>
+    └── httpd7.conf.j2     <span class="token comment">#7系统2.4.6版本httpd配置文件</span>
+
+    <span class="token number">0</span> directories, <span class="token number">2</span> files
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li><li><p>修改<code>playbook</code>文件，通过setup模块获取系统版本去判断。[setup常用模块](<a href="https://buji595.github.io/2019/05/27/Ansible" target="_blank" rel="noopener noreferrer">https://buji595.github.io/2019/05/27/Ansible<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span></a> Ad-hoc常用Module/#setup)</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token comment">#when示例</span>
+<span class="token function">cat</span> <span class="token operator">&gt;</span> testtmp.yml <span class="token operator">&lt;&lt;</span> <span class="token string">EOF
+---
+- hosts: all
+  remote_user: root
+  vars:
+    - listen_port: 88
+
+  tasks:
+    - name: Install Httpd
+      yum: name=httpd state=installed
+    - name: Config System6 Httpd
+      template: src=httpd6.conf.j2 dest=/etc/httpd/conf/httpd.conf
+      when: ansible_distribution_major_version == &quot;6&quot;   #判断系统版本，为6便执行上面的template配置6的配置文件
+      notify: Restart Httpd
+    - name: Config System7 Httpd
+      template: src=httpd7.conf.j2 dest=/etc/httpd/conf/httpd.conf
+      when: ansible_distribution_major_version == &quot;7&quot;   #判断系统版本，为7便执行上面的template配置7的配置文件
+      notify: Restart Httpd
+    - name: Start Httpd
+      service: name=httpd state=started
+
+  handlers:
+    - name: Restart Httpd
+      service: name=httpd state=restarted
+EOF</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li><li><p>执行playbook</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>ansible-playbook testtmp.yml
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></li></ul><h3 id="template之with-items" tabindex="-1"><a class="header-anchor" href="#template之with-items" aria-hidden="true">#</a> template之with_items</h3><p><code>with_items</code>迭代，当有需要重复性执行的任务时，可以使用迭代机制。 对迭代项的引用，固定变量名为<code>“item”</code>，要在task中使用with_items给定要迭代的元素列表。 列表格式：   字符串   字典</p><h4 id="示例1-通过with-items安装多个不同软件" tabindex="-1"><a class="header-anchor" href="#示例1-通过with-items安装多个不同软件" aria-hidden="true">#</a> 示例1：通过with_items安装多个不同软件**</h4><ul><li><p>编写<code>playbook</code></p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token comment"># 示例with_items</span>
+<span class="token function">cat</span> <span class="token operator">&gt;</span> testwith.yml <span class="token operator">&lt;&lt;</span><span class="token string">EOF
+---
+- hosts: all
+  remote_user: root
+
+  tasks:
+    - name: Install Package
+      yum: name={{ item }} state=installed   #引用item获取值
+      with_items:     #定义with_items
+        - httpd
+        - vsftpd
+        - nginx
+EOF</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li><li><p>上面<code>tasks</code>写法等同于：</p><div class="language-yaml line-numbers-mode" data-ext="yml"><pre class="language-yaml"><code><span class="token punctuation">---</span>
+<span class="token punctuation">-</span> <span class="token key atrule">hosts</span><span class="token punctuation">:</span> all
+  <span class="token key atrule">remote_user</span><span class="token punctuation">:</span> root
+  <span class="token key atrule">tasks</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Install Httpd
+      <span class="token key atrule">yum</span><span class="token punctuation">:</span> name=httpd state=installed
+    <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Install Vsftpd
+      <span class="token key atrule">yum</span><span class="token punctuation">:</span> name=vsftpd state=installed
+    <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Install Nginx
+      <span class="token key atrule">yum</span><span class="token punctuation">:</span> name=nginx state=installed
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li></ul><h4 id="示例2-通过嵌套子变量创建用户并加入不同的组" tabindex="-1"><a class="header-anchor" href="#示例2-通过嵌套子变量创建用户并加入不同的组" aria-hidden="true">#</a> 示例2：通过嵌套子变量创建用户并加入不同的组**</h4><ul><li><p>编写<code>playbook</code></p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token comment"># 示例with_items嵌套子变量</span>
+<span class="token function">cat</span> <span class="token operator">&gt;</span> testwith01.yml <span class="token operator">&lt;&lt;</span><span class="token string">EOF
+
+---
+- hosts: all
+  remote_user: root
+
+  tasks:
+    - name: Create New Group
+      group: name={{ item }} state=present
+      with_items: 
+        - group1
+        - group2
+        - group3 
+
+    - name: Create New User
+      user: name={{ item.name }} group={{ item.group }} state=present
+      with_items:
+        - { name: &#39;user1&#39;, group: &#39;group1&#39; } 
+        - { name: &#39;user2&#39;, group: &#39;group2&#39; } 
+        - { name: &#39;user3&#39;, group: &#39;group3&#39; }
+EOF</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li><li><p>执行<code>playbook</code>并验证</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token comment"># 执行playbook</span>
+ansible-playbook testwith01.yml
+
+<span class="token comment"># 验证是否成功创建用户及组</span>
+ansible all <span class="token parameter variable">-m</span> shell <span class="token parameter variable">-a</span> <span class="token string">&#39;tail -3 /etc/passwd&#39;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li></ul><h3 id="template之for-if" tabindex="-1"><a class="header-anchor" href="#template之for-if" aria-hidden="true">#</a> template之for if</h3><p>通过使用<code>for</code>，<code>if</code>可以更加灵活的生成配置文件等需求，还可以在里面根据各种条件进行判断，然后生成不同的配置文件、或者服务器配置相关等。</p><h4 id="示例1" tabindex="-1"><a class="header-anchor" href="#示例1" aria-hidden="true">#</a> 示例1</h4><ul><li><p>编写<code>playbook</code></p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token comment"># template for 示例</span>
+<span class="token function">cat</span> <span class="token operator">&gt;</span> testfor01.yml <span class="token operator">&lt;&lt;</span><span class="token string">EOF
+---
+* hosts: all
+  remote_user: root
+  vars:
+    nginx_vhost_port:
+      - 81
+      - 82
+      - 83
+
+  tasks:
+    * name: Templage Nginx Config
+      template: src=nginx.conf.j2 dest=/tmp/nginx_test.conf
+EOF</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li><li><p>模板文件编写</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token comment"># 循环playbook文件中定义的变量，依次赋值给port</span>
+<span class="token function">cat</span> <span class="token operator">&gt;</span> templates/nginx.conf.j2 <span class="token operator">&lt;&lt;</span> <span class="token string">EOF
+{% for port in nginx_vhost_port %}
+server{
+      listen: {{ port }};
+      server_name: localhost;
+}
+{% endfor %}
+EOF</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li><li><p>执行<code>playbook</code>并查看生成结果</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>ansible-playbook testfor01.yml
+
+<span class="token comment"># 去到一个节点看下生成的结果发现自动生成了三个虚拟主机</span>
+<span class="token function">cat</span> <span class="token operator">&gt;</span> /tmp/nginx_test.conf<span class="token operator">&lt;&lt;</span><span class="token string">EOF
+server{
+      listen: 81;
+      server_name: localhost;
+}
+server{
+      listen: 82;
+      server_name: localhost;
+}
+server{
+      listen: 83;
+      server_name: localhost;
+}
+EOF</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li></ul><h4 id="示例2" tabindex="-1"><a class="header-anchor" href="#示例2" aria-hidden="true">#</a> 示例2</h4><ul><li><p>编写<code>playbook</code></p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">cat</span> <span class="token operator">&gt;</span> testfor02.yml <span class="token operator">&lt;&lt;</span><span class="token string">EOF
+# template for 示例
+---
+- hosts: all
+  remote_user: root
+  vars:
+    nginx_vhosts:
+      - web1:
+        listen: 8081
+        server_name: &quot;web1.example.com&quot;
+        root: &quot;/var/www/nginx/web1&quot;
+      - web2:
+        listen: 8082
+        server_name: &quot;web2.example.com&quot;
+        root: &quot;/var/www/nginx/web2&quot;
+      - web3:
+        listen: 8083
+        server_name: &quot;web3.example.com&quot;
+        root: &quot;/var/www/nginx/web3&quot;
+
+  tasks:
+    - name: Templage Nginx Config
+      template: src=nginx.conf.j2 dest=/tmp/nginx_vhost.conf
+EOF</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li><li><p>模板文件编写</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">cat</span> <span class="token operator">&gt;</span> templates/nginx.conf.j2 <span class="token operator">&lt;&lt;</span><span class="token string">EOF
+{% for vhost in nginx_vhosts %}
+server{
+    listen:    {{ vhost.listen }};
+    server_name:    {{ vhost.server_name }};
+    root:   {{ vhost.root }}; 
+}
+{% endfor %}
+EOF</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li><li><p>执行<code>playbook</code>并查看生成结果</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>ansible-playbook testfor02.yml
+
+<span class="token comment"># 去到一个节点看下生成的结果发现自动生成了三个虚拟主机</span>
+<span class="token function">cat</span> <span class="token operator">&gt;</span> /tmp/nginx_vhost.conf <span class="token operator">&lt;&lt;</span><span class="token string">EOF
+server{
+      listen:    8081;
+      server_name:    web1.example.com;
+      root:   /var/www/nginx/web1; 
+}
+server{
+      listen:    8082;
+      server_name:    web2.example.com;
+      root:   /var/www/nginx/web2; 
+}
+server{
+      listen:    8083;
+      server_name:    web3.example.com;
+      root:   /var/www/nginx/web3; 
+}
+EOF</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li></ul><h4 id="示例3" tabindex="-1"><a class="header-anchor" href="#示例3" aria-hidden="true">#</a> 示例3</h4><p>在for循环中再嵌套if判断，让生成的配置文件更加灵活</p><ul><li>编写<code>playbook</code></li></ul><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">cat</span> <span class="token operator">&gt;</span> testfor03.yml <span class="token operator">&lt;&lt;</span><span class="token string">EOF
+# template for 示例
+---
+- hosts: all
+remote_user: root
+vars:
+  nginx_vhosts:
+    - web1:
+      listen: 8081
+      root: &quot;/var/www/nginx/web1&quot;
+    - web2:
+      server_name: &quot;web2.example.com&quot;
+      root: &quot;/var/www/nginx/web2&quot;
+    - web3:
+      listen: 8083
+      server_name: &quot;web3.example.com&quot;
+      root: &quot;/var/www/nginx/web3&quot;
+
+tasks:
+  - name: Templage Nginx Config
+    template: src=nginx.conf.j2 dest=/tmp/nginx_vhost.conf
+EOF</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul><li>模板文件编写</li></ul><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token comment"># 说明：这里添加了判断，如果listen没有定义的话，默认端口使用8888，如果server_name有定义，那么生成的配置文件中才有这一项。</span>
+<span class="token function">cat</span> <span class="token operator">&gt;</span> templates/nginx.conf.j2  <span class="token operator">&lt;&lt;</span><span class="token string">EOF
+{% for vhost in nginx_vhosts %}
+server {
+  {% if vhost.listen is defined %}
+  listen:    {{ vhost.listen }};
+  {% else %}
+  listen: 8888;
+  {% endif %}
+  {% if vhost.server_name is defined %}
+  server_name:    {{ vhost.server_name }};
+  {% endif %}
+  root:   {{ vhost.root }}; 
+}
+{% endfor %}
+EOF</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul><li>执行<code>playbook</code>并查看生成结果</li></ul><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>ansible-playbook testfor03.yml
+
+<span class="token comment"># 去到一个节点看下生成的结果发现自动生成了三个虚拟主机</span>
+<span class="token function">cat</span> <span class="token operator">&gt;</span> /tmp/nginx_vhost.conf <span class="token operator">&lt;&lt;</span><span class="token string">EOF
+server {
+  listen:    8081;
+  root:   /var/www/nginx/web1; 
+}
+server {
+  listen: 8888;
+  server_name:    web2.example.com;
+  root:   /var/www/nginx/web2; 
+}
+server {
+  listen:    8083;
+  server_name:    web3.example.com;
+  root:   /var/www/nginx/web3; 
+}
+EOF</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><!-- 
+#### 上面三个示例的图片展示效果
+
+**例一**
+
+![img](https://img2018.cnblogs.com/blog/1210730/201906/1210730-20190603182408963-2004947736.png)
+
+**例二**
+
+![img](https://img2018.cnblogs.com/blog/1210730/201906/1210730-20190603182435304-125352301.png)
+
+**例三**
+
+![img](https://img2018.cnblogs.com/blog/1210730/201906/1210730-20190603182451646-877767815.png) --></div><!--[--><!--]--></div><footer class="page-meta"><!----><div class="meta-item last-updated"><span class="meta-item-label">最近更新时间: </span><!----></div><!----></footer><nav class="page-nav"><p class="inner"><!----><span class="next"><a href="/flinux/Ansible/Playbook-2.html" class="" aria-label="Playbook 操作"><!--[--><!--]--> Playbook 操作 <!--[--><!--]--></a></span></p></nav><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
+    <script type="module" src="/assets/app-55c326ac.js" defer></script>
+  </body>
+</html>

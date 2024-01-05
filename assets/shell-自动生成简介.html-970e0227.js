@@ -1,0 +1,21 @@
+import{_ as n,o as s,c as a,f as t}from"./app-55c326ac.js";const e={},l=t(`<h1 id="shell-自动生成简介" tabindex="-1"><a class="header-anchor" href="#shell-自动生成简介" aria-hidden="true">#</a> shell: 自动生成简介</h1><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token builtin class-name">set</span> ignorecase
+<span class="token builtin class-name">set</span> cursorline
+<span class="token builtin class-name">set</span> autoindent
+autocmd BufNewFile *.sh <span class="token builtin class-name">exec</span> <span class="token string">&quot;:call SetTitle()&quot;</span>
+func SetTitle<span class="token punctuation">(</span><span class="token punctuation">)</span>
+ <span class="token keyword">if</span> expand<span class="token punctuation">(</span><span class="token string">&quot;%:e&quot;</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token string">&#39;sh&#39;</span>
+ call setline<span class="token punctuation">(</span><span class="token number">1</span>,<span class="token string">&quot;#!/bin/bash&quot;</span><span class="token punctuation">)</span>
+ call setline<span class="token punctuation">(</span><span class="token number">2</span>,<span class="token string">&quot;#********************************************************************&quot;</span><span class="token punctuation">)</span>
+ call setline<span class="token punctuation">(</span><span class="token number">3</span>,<span class="token string">&quot;#Author:       wlinhao.tk&quot;</span><span class="token punctuation">)</span>
+ call setline<span class="token punctuation">(</span><span class="token number">4</span>,<span class="token string">&quot;#Username：    janmeslinhao &quot;</span><span class="token punctuation">)</span>
+ call setline<span class="token punctuation">(</span><span class="token number">5</span>,<span class="token string">&quot;#Date：        &quot;</span>.strftime<span class="token punctuation">(</span><span class="token string">&quot;%Y-%m-%d&quot;</span><span class="token punctuation">))</span>
+ call setline<span class="token punctuation">(</span><span class="token number">6</span>,<span class="token string">&quot;#FileName：    &quot;</span>.expand<span class="token punctuation">(</span><span class="token string">&quot;%&quot;</span><span class="token punctuation">))</span>
+ call setline<span class="token punctuation">(</span><span class="token number">7</span>,<span class="token string">&quot;#URL：         https://www.wlinhao.tk&quot;</span><span class="token punctuation">)</span>
+ call setline<span class="token punctuation">(</span><span class="token number">8</span>,<span class="token string">&quot;#Description：  Annotated script&quot;</span><span class="token punctuation">)</span>
+ call setline<span class="token punctuation">(</span><span class="token number">9</span>,<span class="token string">&quot;#********************************************************************&quot;</span><span class="token punctuation">)</span>
+ call setline<span class="token punctuation">(</span><span class="token number">10</span>,<span class="token string">&quot;&quot;</span><span class="token punctuation">)</span>                                                                                                                                  
+endif
+endfunc
+autocmd BufNewFile * normal G
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>将这段代码放置在用户的家目录下面并命令为.vimrc即可</p>`,3),i=[l];function p(c,o){return s(),a("div",null,i)}const r=n(e,[["render",p],["__file","shell-自动生成简介.html.vue"]]);export{r as default};

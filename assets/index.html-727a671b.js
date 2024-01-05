@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-7d4f3b6a","path":"/fchat/","title":"ChatGPT目录","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1704274705000,"contributors":[{"name":"wanglinhao","email":"wanglinhao@wegooooo.com","commits":2}]},"filePathRelative":"fchat/index.md"}');export{a as data};
